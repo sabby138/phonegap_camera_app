@@ -63,29 +63,32 @@ var app = {
     getPhoto: function() {            
         navigator.camera.getPhotoicture(onSuccess, onFail, 
           { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
-
-        onSuccess: function (imageURI) {document.getElementById('image').src = imageURI;
-        }
-
-        onFail: function(message) {
-          alert('An error Occured: ' + message);
-        }
     },
+    
+    onSuccess: function (imageURI) {
+        document.getElementById('image').src = imageURI;
+    },
+
+    onFail: function(message) {
+        alert('An error Occured: ' + message);
+    },
+    
 
     getPicture: function() {            
         navigator.camera.getPicture(onSuccess, onFail, 
           { quality: 50, destinationType: Camera.DestinationType.FILE_URI,
            sourceType: navigator.camera.PictureSourceType.SAVEDPHOTOALBUM  });
+    },
 
-        onSuccess: function (imageURI) {
-            var largeImage = document.getElementById ('picture');
-            largeImage.style.display = 'block';
-            largeImage.src = imageURI;
-        }
+    onSuccess: function (imageURI) {
+          var largeImage = document.getElementById ('picture');
+          largeImage.style.display = 'block';
+          largeImage.src = imageURI;
+    },
 
         onFail: function(message) {
           alert('An error Occured: ' + message);
         }
-    }
+    
 
 };
