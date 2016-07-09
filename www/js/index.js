@@ -58,7 +58,7 @@ var app = {
         quality: 50,
         destinationType: Camera.DestinationType.FILE_URI
       });
-    }
+    },
 
     getPhoto: function() {            
         navigator.camera.getPhotoicture(onSuccess, onFail, 
@@ -70,7 +70,7 @@ var app = {
         onFail: function(message) {
           alert('An error Occured: ' + message);
         }
-    }
+    },
 
     getPicture: function() {            
         navigator.camera.getPicture(onSuccess, onFail, 
