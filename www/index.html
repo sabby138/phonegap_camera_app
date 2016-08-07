@@ -23,10 +23,67 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+         <script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+
+ <!-- Bootstrap Include -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+        <script src="js/mobiscroll.custom-3.0.0-beta4.min.js"></script>
+<link href="css/mobiscroll.custom-3.0.0-beta4.min.css" rel="stylesheet" type="text/css">
         <title>Hello World</title>
+
+
+
+<script>
+mobiscroll.settings = {
+    theme: 'Bootstrap',
+    lang: 'english'
+};
+</script>
     </head>
     <body>
-        <div class="app">
+        
+        <div  mbsc-enhance>
+    <div class="mbsc-divider">Single-line text</div>
+<label>
+    Username
+    <input id="username" />
+</label>
+
+
+<div>
+    <label for="username">Username</label>
+    <input id="username" />
+</div>
+
+<label>
+    Email
+    <input id="email" type="email" data-icon="ion-ios7-email" />
+</label>
+
+<label>
+    Email
+    <input id="email" type="email" data-icon="ion-ios7-email" data-icon-align="right"/>
+</label>
+<div>
+<input type="password" placeholder="Password">
+</div>
+<div>
+<input type="text" placeholder="Password" data-password-toggle="true" data-icon-show="home" data-icon-hide="eye-blocked">
+</div>
+<div>
+<input type="text" placeholder="Password" data-password-toggle="true" data-icon-show="my-show-icon" data-icon-hide="my-hide-icon"/>
+</div>
+
+<label>
+    About me
+    <textarea id="aboutme" ></textarea>
+</label>
+
+</div>
+
+
+
+<!--<div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
@@ -45,7 +102,7 @@
                 <br/>
                 <img style="display:none;" id="picture" src="" width="150" height="150" />
             </div>
-        </div>
+        </div>-->
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
