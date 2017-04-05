@@ -17,7 +17,7 @@
  * under the License.
  */
 
-//var aqbc gdf dfgfd
+//var aqbc gdf dfgfd bindEvents
 
 var app = {
     // Application Constructor
